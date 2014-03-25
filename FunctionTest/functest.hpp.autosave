@@ -1,0 +1,31 @@
+#ifndef FUNCTEST_HPP
+#define FUNCTEST_HPP
+#include <queue>
+#include <vector>
+
+
+using namespace std;
+class FuncTest{
+     typedef void ( FuncTest::*func_ptr)();
+
+private:
+    queue< func_ptr> q;
+    vector<func_ptr> functions;
+
+public:
+    FuncTest();
+    void BuildQ();
+    void Execute();
+    void A();
+    void B();
+    void C();
+    void D();
+    void E();
+    void F();
+    void G();
+    
+    
+    
+};
+
+#endif // FUNCTEST_HPP
